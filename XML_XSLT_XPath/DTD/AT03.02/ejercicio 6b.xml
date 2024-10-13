@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+ <!ELEMENT alumnos (alumno*)>
+ <!ELEMENT alumno EMPTY>
+ <!ATTLIST alumno codigo ID #REQUIRED>
+ <!ATTLIST alumno nombre NMTOKENS #REQUIRED>
+ <!ATTLIST alumno edad NMTOKENS #REQUIRED>
+]>
+<alumnos>
+	 <alumno codigo="100" nombre="Lorena Casal Rodríguez" edad="5" />
+	 <alumno codigo="123" nombre="Xurxo Vega Sousa" edad="7" />
+	 <alumno codigo="132" nombre="Antía Castro Castiñeira" edad="8" />
+</alumnos>

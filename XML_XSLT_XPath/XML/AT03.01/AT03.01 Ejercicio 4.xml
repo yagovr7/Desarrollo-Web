@@ -1,0 +1,37 @@
+<?xml version="1.1"?>
+<ciclo>
+<modulo>DAW</modulo>
+<nombre>Lenguajes de marcas y Sistemas de Gestion de la Informacion</nombre>
+<horas>5 horas semanales</horas>
+<fecha_inicio>15/09/2019</fecha_inicio>
+<fecha_fin>30/06/2020</fecha_fin>
+
+ <alumno1>
+
+	 <nombre>Ana</nombre>
+	 <apellidos>Fernandez Gutierrez</apellidos>
+	 <DNI>16965696L</DNI>
+	 <tlf>789654321</tlf>
+	 <correo>ana.fdezgtrrez@hotmail.com</correo>
+	 <direccion>r/El Percebe, 13” de Santander</direccion>
+	 <codigo_postal>39302</codigo_postal>
+	 <faltas_asistencia>Ninguna</faltas_asistencia>
+	 <nota>Ninguna</nota>
+
+ </alumno1>
+
+ <alumno2>
+
+	 <nombre>Pepe</nombre>
+	 <apellidos>Perez</apellidos>
+	 <DNI>98765432H</DNI>
+	 <tlf>656566555</tlf>
+	 <correo>yhyh@yahoo.com</correo>
+	 <direccion>Avda. El Pez, 5” de Suances</direccion>
+	 <codigo_postal>39401</codigo_postal>
+	 <faltas_asistencia>Ninguna</faltas_asistencia>
+	 <nota>apto</nota>
+
+ </alumno2>
+
+</ciclo>

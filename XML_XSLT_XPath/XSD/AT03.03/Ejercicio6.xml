@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulo codigo="MP0373" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AT03.03.06.xsd">
+	<duracion horas="133" sesiones="160" sesionesSemanales="5"/>
+	<nombre>Linguaxes de marcas y sistemas de xestión da información</nombre>
+	<ciclo codigo="CSIFC01">Administración de sistemas informáticos y redes</ciclo>
+	<ciclo codigo="CSIFC02">Desenvolvemento de aplicaciones multiplataforma</ciclo>
+	<ciclo codigo="CSIFC03">Desenvolvemento de aplicaciones web</ciclo>
+	<contenidos>
+		<UD num="1" sesiones="5">
+			<titulo>Aplicaciones web. Introdución aos linguaxes de marcas</titulo>
+			<descripcion>
+				Introdución aos conceptos relacionados coas aplicaciones web. Páxinas web estáticas y dinámicas. Introdución aos linguaxes de marcas.
+			</descripcion>
+		</UD>
+		<UD num="2" sesiones="12">
+			<titulo>Linguaxes de marcas para a transmisión de información a través da Web: HTML.</titulo>
+		</UD>
+		<UD num="3" sesiones="13">
+			<titulo>Linguaxes de marcas para a transmisión de información a través da Web: CSS</titulo>
+			<descripcion>Separar o contido da presentación. Follas de estilo CSS.</descripcion>
+		</UD>
+	</contenidos>
+</modulo>
+
+
+XSD:
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="modulo">  <!-- Definimos elemento MODULO-->
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="duracion" maxOccurs="1">  <!-- Duración del módulo-->
+					<xs:complexType>
+						<xs:attribute name="horas" type="xs:unsignedShort" use="required"/>  			<!-- Atributos-->
+						<xs:attribute name="sesiones" type="xs:unsignedShort" use="required"/> 			<!-- Atributos-->
+						<xs:attribute name="sesionesSemanales" type="xs:unsignedByte" use="required"/> 	<!-- Atributos-->
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nombre" type="tipoNombreLargo" maxOccurs="1"/> <!-- Nombre del módulo-->
+				<xs:element name="ciclo" maxOccurs="100"> <!-- Código del ciclo-->
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="tipoNombreLargo"> <!-- Restricciones sobre el código-->
+								<xs:attribute name="codigo" type="t_codciclo"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="contenidos"> <!-- Contenido del módulo-->
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="UD" minOccurs="1" maxOccurs="20">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="titulo" type="tipoNombreLargo"/>
+										<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+									<xs:attribute name="num" type="t_num21" use="required"/>
+									<xs:attribute name="sesiones" type="t_num21" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="codigo" type="t_codmodulo"/>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="t_codciclo">  								<!-- código de ciclo-->
+		<xs:restriction base="xs:string"> 							<!-- tipo de datos-->
+			<xs:pattern value="C[BSM][A-Z]{3}[0-9][0-9]"/> 			<!-- patrón que debe cumplir-->
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="t_codmodulo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="MP[0-9]{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="t_num21">
+		<xs:restriction base="xs:unsignedShort">
+			<xs:maxInclusive value="21"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="tipoNombreLargo">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="150"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ciclo familia="IFC" tipo="CS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="AT03.03.04b.xsd">
+ <Nombre>Administración de Sistemas Informáticos</Nombre>
+ <Modulo>Redes de Area Local</Modulo>
+ <Modulo>Sistemas Informáticos Monousuario y Multiusuario</Modulo>
+ <Modulo>Sistemas Xestores de Bases de Datos</Modulo>
+</Ciclo>
+
+<!-- XSD -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Ciclo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Nombre" type="xs:string"/>
+				<xs:element name="Modulo" type="xs:string" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="familia" type="xs:string"/>
+			<xs:attribute name="tipo" type="tipo"/>
+		</xs:complexType>
+	</xs:element>
+
+	<!--Restricciones-->
+	<xs:simpleType name="tipo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="CB|CM|CS"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+                                                

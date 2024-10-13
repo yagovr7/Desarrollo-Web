@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reservas [
+	<!ELEMENT reservas (reserva, cliente)>
+	<!ELEMENT reserva (fecha_inicio, observación, fecha_fin)>
+	<!ATTLIST reserva cliente IDREF #REQUIRED tipo (SA|AD|MP|PC) #REQUIRED habitacion (Doble|Individual) #REQUIRED>
+	<!ELEMENT fecha_inicio (observacións)>
+	<!ATTLIST fecha_inicio ano CDATA #REQUIRED 
+	mes (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|noviembre|diciembre) #REQUIRED 
+	día CDATA #REQUIRED>
+	<!ELEMENT observacións (#PCDATA)>
+	<!ELEMENT fecha_fin EMPTY>
+	<!ATTLIST fecha_fin ano CDATA #REQUIRED 
+	mes (enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|noviembre|diciembre) #REQUIRED 
+	día CDATA #REQUIRED>
+	<!ELEMENT cliente (nombre, apellidos, movil, correo?)>
+	<!ATTLIST cliente id CDATA #REQUIRED>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT apellidos (#PCDATA)>
+	<!ELEMENT movil (#PCDATA)>
+	<!ELEMENT correo (#PCDATA)>
+]>
+
+
+<reservas>
+	<reserva cliente="CLI1" tipo="AD" habitacion="Doble">
+		<fecha_inicio ano="2013" mes="febrero" día="5">
+		<observacións>Chegan sobre as 23:30</observacións>
+		</fecha_inicio>
+		<fecha_fin ano="2013" mes="febrero" día="9" />
+	</reserva>
+	<reserva cliente="CLI2" tipo="MP">
+		<fecha_inicio ano="2013" mes="febrero" día="7" />
+		<fecha_fin ano="2013" mes="febrero" día="15">
+		<observacións>Saída as 16:00</observacións>
+		</fecha_fin>
+	</reserva>
+	<reserva cliente="CLI1" tipo="TI">
+		<fecha_inicio ano="2013" mes="febrero" día="18" />
+		<fecha_fin ano="2013" mes="febrero" día="23" />
+	</reserva>
+	<cliente id="CLI1">
+		<nombre>Eva</nombre>
+		<apellidos>Sobral García</apellidos>
+		<movil>688998899</movil>
+		<correo>eva.sobral@meucorreo.com</correo>
+	</cliente>
+	<cliente id="CLI2">
+		<nombre>Xan</nombre>
+		<apellidos>López Paz</apellidos>
+		<movil>677778899</movil>
+	</cliente>
+</reserva>

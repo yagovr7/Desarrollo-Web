@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modulo codigo="MP0373" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="AT03.03.04c.xsd">
+	<duracion horas="133" sesions="160" sesionsSemanais="5"/>
+	<nome>Linguaxes de marcas y sistemas de xestión da información</nome>
+	<ciclo codigo="CSIFC01">Administración de sistemas informáticos y redes</ciclo>
+	<ciclo codigo="CSIFC02">Desenvolvemento de aplicaciones multiplataforma</ciclo>
+	<ciclo codigo="CSIFC03">Desenvolvemento de aplicaciones web</ciclo>
+<contidos>
+	<UD num="1" sesións="5">
+		<titulo>Aplicaciones web. Introdución aos linguaxes de marcas</titulo>
+		<descrición>Introdución aos conceptos relacionados coas aplicaciones web.
+		Páxinas web estáticas y dinámicas. Introdución aos linguaxes de marcas.</descrición>
+	</UD>
+	<UD num="2" sesións="12">
+		<titulo>Linguaxes de marcas para a transmisión de información a través da Web:
+		HTML. </titulo>
+	</UD>
+	<UD num="3" sesións="13">
+		<titulo>Linguaxes de marcas para a transmisión de información a través da Web:
+		CSS</titulo>
+		<descrición>Separar o contido da presentación. Follas de estilo CSS.</descrición>
+	</UD>
+</contidos>
+</modulo>
+
+<!-- XSD -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="modulo">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="duracion">
+						<xs:complexType>
+							<xs:attribute name="horas" type="xs:integer" use="required" />
+							<xs:attribute name="sesions" type="xs:integer" use="required" />
+							<xs:attribute name="sesionsSemanais" type="xs:integer" />
+						</xs:complexType>
+					</xs:element>
+
+					<xs:element name="nome" type="xs:string" maxOccurs="1" />
+
+					<xs:element name="ciclo" type="xs:string" maxOccurs="100" >
+						<xs:complexType>
+							<xs:simpleContent>
+								<xs:extension base="xs:string">
+									<xs:attribute name="codigo" type="xs:string" use="required"></xs:attribute>
+								</xs:extension>
+							</xs:simpleContent>
+						</xs:complexType>
+					</xs:element>
+
+					<xs:element name="contidos">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="UD" minOccurs="1" maxOccurs="20">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="titulo" type="xs:string" use="required"/>
+											<xs:element name="descripcion" type="xs:string"/>
+										</xs:sequence>
+										<xs:attribute name="num" type="xs:integer" use="required"/>
+										<xs:attribute name="sesións" type="xs:integer" use="required"/>
+									</xs:complexType>
+								</xs:element>
+				</xs:sequence>
+				<xs:attribute name="codigo" type="xs:integer"/>
+			</xs:complexType>
+		</xs:element>
+                </xs:sequence>
+                </xs:complexType>
+        </xs:element>
+</xs:schema>
+						
+				
+  

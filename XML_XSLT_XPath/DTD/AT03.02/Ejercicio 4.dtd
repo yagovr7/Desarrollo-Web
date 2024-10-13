@@ -1,0 +1,7 @@
+<!ELEMENT mensaje (de, para+, asunto?, cuerpo?, adjunto*)>
+<!ATTLIST mensaje prioridad (alta|normal|baja) "normal" bandejaDefecto CDATA "enviados">
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
+<!ELEMENT adjunto (#PCDATA)>

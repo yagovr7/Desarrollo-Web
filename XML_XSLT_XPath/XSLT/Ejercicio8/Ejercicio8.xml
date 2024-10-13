@@ -1,0 +1,92 @@
+<horario ciclo="ASIR Ordinario" grupo="1º" centro="IES San Clemente" ano="2013">
+<horas>
+ <hora id="1">
+ <inicio>08:45</inicio>
+ <fin>09:35</fin>
+ </hora>
+ <hora id="2">
+ <inicio>09:35</inicio>
+ <fin>10:25</fin>
+ </hora>
+ <hora id="3">
+ <inicio>10:25</inicio>
+ <fin>11:15</fin>
+ </hora>
+ <hora id="4">
+ <inicio>11:15</inicio>
+ <fin>12:05</fin>
+ </hora>
+ <hora id="5">
+ <inicio>12:05</inicio>
+ <fin>12:55</fin>
+ </hora>
+ <hora id="6">
+ <inicio>12:55</inicio>
+ <fin>13:45</fin>
+ </hora>
+ <hora id="7">
+ <inicio>13:45</inicio>
+ <fin>14:35</fin>
+ </hora>
+ <hora id="8">
+ <inicio>16:20</inicio>
+ <fin>17:10</fin>
+ </hora>
+ <hora id="9">
+ <inicio>17:10</inicio>
+ <fin>18:00</fin>
+ </hora>
+</horas>
+<dia num="1">
+<materia hora="1" nombre="Planificación y Administración de Redes" />
+<materia hora="2" nombre="Planificación y Administración de Redes" />
+<materia hora="3" nombre="Formación y Orientación Laboral" />
+<materia hora="4" nombre="Lenguajes de Marcas y Sistemas de Gestión de la
+Información" />
+<materia hora="5" nombre="Lenguajes de Marcas y Sistemas de Gestión de la
+Información" />
+<materia hora="6" nombre="Implantación de Sistemas Operativos" />
+<materia hora="7" nombre="Implantación de Sistemas Operativos" />
+</dia>
+<dia num="2">
+<materia hora="1" nombre="Lenguajes de Marcas y Sistemas de Gestión de la
+Información" />
+<materia hora="2" nombre="Lenguajes de Marcas y Sistemas de Gestión de la
+Información" />
+<materia hora="3" nombre="Gestión de Bases de Datos" />
+<materia hora="4" nombre="Gestión de Bases de Datos" />
+<materia hora="5" nombre="Gestión de Bases de Datos" />
+<materia hora="6" nombre="Implantación de Sistemas Operativos" />
+<materia hora="7" nombre="Implantación de Sistemas Operativos" />
+</dia>
+<dia num="3">
+<materia hora="1" />
+<materia hora="2" nombre="Lenguajes de Marcas y Sistemas de Gestión de la
+Información" />
+<materia hora="3" nombre="Formación y Orientación Laboral" />
+<materia hora="4" nombre="Planificación y Administración de Redes" />
+<materia hora="5" nombre="Planificación y Administración de Redes" />
+<materia hora="6" nombre="Fundamentos Hardware" />
+<materia hora="7" nombre="Fundamentos Hardware" />
+<materia hora="8" nombre="Implantación de Sistemas Operativos" />
+<materia hora="9" nombre="Implantación de Sistemas Operativos" />
+</dia>
+<dia num="4">
+<materia hora="1" nombre="Planificación y Administración de Redes" />
+<materia hora="2" nombre="Planificación y Administración de Redes" />
+<materia hora="3" nombre="Implantación de Sistemas Operativos" />
+<materia hora="4" nombre="Implantación de Sistemas Operativos" />
+<materia hora="5" nombre="Formación y Orientación Laboral" />
+<materia hora="6" nombre="Gestión de Bases de Datos" />
+<materia hora="7" nombre="Gestión de Bases de Datos" />
+</dia>
+<dia num="5">
+<materia hora="1" nombre="Planificación y Administración de Redes" />
+<materia hora="2" nombre="Planificación y Administración de Redes" />
+<materia hora="3" nombre="Gestión de Bases de Datos" />
+<materia hora="4" nombre="Gestión de Bases de Datos" />
+<materia hora="5" nombre="Fundamentos Hardware" />
+<materia hora="6" nombre="Fundamentos Hardware" />
+<materia hora="7" nombre="Formación y Orientación Laboral" />
+<dia>
+</horario>

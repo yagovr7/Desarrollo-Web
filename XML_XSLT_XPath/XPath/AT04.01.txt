@@ -1,0 +1,207 @@
+1. Tomando como base el siguiente documento XML:
+
+a. /equipos/máquina
+b. /equipos/máquina/hardware
+c. /equipos/máquina/config
+d. //máquina/hardware/fabricante
+e. //disco/..
+f. //máquina/config/IP
+
+2. Sobre el siguiente documento XML:
+
+a. //title/text()
+b. //body/p
+c. //p
+d. /html/body/p
+e. //@src
+f. //@src
+g. //form[@method="get"]
+h. //p[1]
+
+3. Resuelve las consultas que se indican sobre el siguiente documento XML:
+
+a. //producto/@cod
+b. 
+c. //producto|//cliente
+d. //producto[@cod="PR01"]
+e. //producto[@cod="PR05"]
+f. 
+
+4. Tomando como base el siguiente documento XML:
+
+a. //following::comment()
+b. //película[@id="3"]//following::comment()  
+c. //película[género="Drama"]
+d. //actor[sexo="mujer"]//nombre
+e. //text()
+f. //película[título=títulooriginal]
+g. //actor[nombre="Elisabeth Shue"]/@id/..
+h. //película[actúa/@id=51]/título
+i. //película[actúa/@id="51"]/título
+j. //película[last()]/título
+k. sum(//película/importe[@moneda="dólar"]/text())
+l. sum(//película/importe[@moneda="dólar"]) div 1.4 + sum(//película/importe[@moneda="euro"])
+
+5. Tomando como base el siguiente documento XML:
+
+a. discos de tecnología "SCSI"
+
+//disco [@tecnología="SCSI"]
+
+b. configuración de las máquinas en las que figura un gateway.
+
+//config/gateway/..
+
+c. nombre del sistema operativo de la máquina con IP "192.168.10.45"
+
+
+ //config [IP="192.168.10.45"]/OS
+
+
+d. máquinas de tipo "Semitorre" con sistema operativo "Windows 8".
+
+
+//máquina[hardware/tipo="Semitorre" and config/OS="Windows 8"]
+
+
+e. atributos que figuran en los procesadores de la marca "AMD"
+
+
+//procesador[@marca="AMD"]/@*
+
+
+f. textos (solamente) que figuran en la configuración (elemento "config") del equipo de nombre
+"COPERNICO".
+
+//máquina[@nombre="COPERNICO"]/config//text()
+
+
+g. fabricantes de las máquinas que tengan 4GB de memoria "DDR2".
+
+
+//máquina[hardware/memoria="4" and hardware/memoria/@tecnología="DDR2"]/hardware/fabricante//text()
+
+
+h. sistema operativo de las máquinas en las que figure el número de núcleos del procesador.
+
+
+//máquina[hardware/procesador/@num_nucleos>="1"]/config/OS
+
+
+i. nombres de las máquinas que empleen memoria con tecnología "DDR2".
+
+
+//máquina[hardware/memoria/@tecnología="DDR2"]/@nombre
+
+
+j. máquinas con procesador de la marca "Intel" y grabadora de DVD.
+
+
+//máquina[hardware/procesador/@marca="Intel" and hardware/grabadora/@tipo="DVD"]
+
+
+k. máquinas cuyo nombre comience por "PC"
+
+--------------------------
+
+l. nombre de las máquinas con más de un disco duro
+
+
+//máquina[count(hardware/disco)>=2]/@nombre
+
+
+m. suma de los GB de memoria RAM de todas las máquinas
+
+
+sum(//memoria/text())
+
+
+n. suma de las capacidades de los discos duros de tipo "SCSI"
+
+
+sum(//disco[@tecnología="SCSI"]/@capacidad)
+
+
+o. nombres de las máquinas de las que se conozca su cantidad de memoria, pero no la tecnología de ésta
+
+
+//máquina/config/OS/../..[hardware/memoria/not(@tecnología)]
+
+
+p. máquinas con sistema operativo de la familia Windows y grabadora de DVD
+
+
+//máquina[hardware/grabadora/@tipo="DVD" and config/OS!="Ubuntu 8.04 Server"]
+
+
+q. máquinas en las que no figure el sistema operativo
+
+
+//máquina[config/not(OS)]
+
+
+r. nombre de la máquina y del SO de las máquinas con más de un disco duro.
+
+
+//máquina[count(hardware/disco)>=2]/@nombre|//máquina[count(hardware/disco)>=2]/config/OS
+
+
+s. configuración de las máquinas en las que figura una dirección IP pero no el gateway.
+
+
+//máquina[config/IP and config/not(gateway)]
+
+
+t. elementos que están vacíos
+
+------------------------------
+
+u. direcciones IP dentro de la red 192.168.10.0/24.
+
+//máquina[config/gateway="192.168.10.1"]
+
+v. nombres de las máquinas con procesador multinúcleo y 2GB o menos de memoria
+
+//máquina[hardware/procesador/@num_nucleos>"1" and hardware/memoria<="2"]/@nombre
+
+w. máquinas que tengan disco duro (uno o varios) con capacidad total mayor de 1000GB.
+
+//máquina[count(hardware/disco)>=1 and sum(hardware/disco/@capacidad)>1000]
+
+x. máquinas que tengan disco duro (uno o varios) con capacidad total menor de 80GB.
+
+//máquina[count(hardware/disco)>=1 and sum(hardware/disco/@capacidad)<=80]
+
+6. Sobre el siguiente documento XML:
+
+a. Número de alumnos asistentes
+
+count(//alumno)
+
+b. Selecciona los primeros alumnos de cada curso
+
+//curso/alumno[1]
+
+c. Selecciona el primer alumno del primer curso y el último alumno del último curso
+
+//curso[1]/alumno[1]|//curso[last()]/alumno[last()]
+
+d. Selecciona los alumnos del último curso
+
+//curso[last()]/alumno
+
+e. Selecciona los nombres de los cursos impartidos
+
+//curso/@nombre
+
+f. Selecciona los nombres de los cursos con nivel bajo o medio
+
+//curso[@nivel="bajo" or @nivel="medio"]/@nombre
+
+g. Selecciona los valores de todos los atributos del curso de C#
+
+//curso[@nombre="C#"]/@*
+
+h. Selecciona la dirección del alumno llamado Perico 
+
+//alumno[nombre="Perico"]/dirección/text()

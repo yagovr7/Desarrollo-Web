@@ -1,0 +1,71 @@
+<?xml version="1.1"?>
+
+<horario>
+
+	<lunes>
+
+		<primera_hora>16:20 a 17:10 LMSXI</primera_hora>
+		<segunda_hora>17:10 a 18:00 LMSXI</segunda_hora>
+		<tercera_hora>18:00 a 18:50 LMSXI</tercera_hora>
+		<cuarta_hora>18:50 a 19:40 BD</cuarta_hora>
+		<quinta_hora>19:40 a 20:30 BD</quinta_hora>
+		<sexta_hora>20:30 a 21:20 SIST</sexta_hora>
+		<septima_hora>21:20 a 22:10 SIST</septima_hora>
+
+	</lunes>
+
+	<martes>
+
+		<primera_hora>16:20 a 17:10 CD</primera_hora>
+		<segunda_hora>17:10 a 18:00 CD</segunda_hora>
+		<tercera_hora>18:00 a 18:50 SIST</tercera_hora>
+		<cuarta_hora>18:50 a 19:40 SIST</cuarta_hora>
+		<quinta_hora>19:40 a 20:30 PROG</quinta_hora>
+		<sexta_hora>20:30 a 21:20 PROG</sexta_hora>
+		<septima_hora>21:20 a 22:10 PROG</septima_hora>
+
+	</martes>
+
+	<miercoles>
+
+		<primera_hora>16:20 a 17:10 LMSXI</primera_hora>
+		<segunda_hora>17:10 a 18:00 LMSXI</segunda_hora>
+		<tercera_hora>18:00 a 18:50 PROG</tercera_hora>
+		<cuarta_hora>18:50 a 19:40 PROG</cuarta_hora>
+		<quinta_hora>19:40 a 20:30 PROG</quinta_hora>
+		<sexta_hora>20:30 a 21:20 BD</sexta_hora>
+		<septima_hora>21:20 a 22:10 BD</septima_hora>
+		<octava_hora>22:10 a 23:00 BD</octava_hora>
+
+	</miercoles>
+	
+	<jueves>
+
+		<primera_hora>16:20 a 17:10 PROG</primera_hora>
+		<segunda_hora>17:10 a 18:00 PROG</segunda_hora>
+		<tercera_hora>18:00 a 18:50 PROG</tercera_hora>
+		<cuarta_hora>18:50 a 19:40 BD</cuarta_hora>
+		<quinta_hora>19:40 a 20:30 BD</quinta_hora>
+		<sexta_hora>20:30 a 21:20 FOL</sexta_hora>
+		<septima_hora>21:20 a 22:10 FOL</septima_hora>
+
+	</jueves>
+
+	<viernes>
+
+		<primera_hora>16:20 a 17:10 CD</primera_hora>
+		<segunda_hora>17:10 a 18:00 CD</segunda_hora>
+		<tercera_hora>18:00 a 18:50 SIST</tercera_hora>
+		<cuarta_hora>18:50 a 19:40 SIST</cuarta_hora>
+		<quinta_hora>19:40 a 20:30 SIST</quinta_hora>
+		<sexta_hora>20:30 a 21:20 FOL</sexta_hora>
+		<septima_hora>21:20 a 22:10 FOL</septima_hora>
+
+	</viernes>
+
+</horario>
+
+
+
+
+

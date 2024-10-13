@@ -1,0 +1,43 @@
+<!ELEMENT Hardware (Maquina*)>
+<!ELEMENT Maquina (Info, Config, Notas?)>
+<!ELEMENT Info (Tipo, Fabricante?, Procesador?, Memoria?, Disco*,
+(Lectora | Gravadora)?)>
+<!ELEMENT Tipo (#PCDATA)>
+<!ELEMENT Fabricante (#PCDATA)>
+<!ATTLIST Fabricante id IDREF #REQUIRED>
+<!ELEMENT Procesador (#PCDATA)>
+<!ELEMENT Memoria (#PCDATA)>
+<!ELEMENT Disco EMPTY>
+<!ELEMENT Lectora (#PCDATA)>
+<!ELEMENT Gravadora (#PCDATA)>
+<!ELEMENT Config (Role*, OS?, IP*, Gateway?)>
+<!ELEMENT Role (#PCDATA)>
+<!ELEMENT OS (#PCDATA)>
+<!ELEMENT IP (#PCDATA)>
+<!ELEMENT Gateway (#PCDATA)>
+<!ELEMENT Notas (#PCDATA)>
+<!ENTITY Unidad_optica
+ "Tipo (CD | DVD | BD) #REQUIRED
+ Velocidad CDATA #IMPLIED">
+<!ATTLIST Maquina
+ Nombre ID #REQUIRED>
+<!ATTLIST Procesador
+ Marca (Intel | AMD) #REQUIRED
+NumNucleos CDATA "1"
+ Velocidad CDATA #IMPLIED>
+<!ATTLIST Disco
+ Tecnología (ATA | SATA | SCSI | SSD) #IMPLIED
+ Capacidad CDATA #REQUIRED>
+<!ATTLIST Memoria
+ Tecnología (DDR | DDR2 | DDR3) #IMPLIED>
+<!ATTLIST Lectora &Unidad_optica; >
+<!ATTLIST Gravadora &Unidad_optica; >
+<!ELEMENT Fabricantes (Fabricante)>
+<!ELEMENT Fabricante (nombre, pagina_web, correo)
+<!ATTLIST Fabricante id CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pagina_web (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT ubicacion (nombre)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre tipo (aula|sala|departamento) #REQUIRED cantidad CDATA #REQUIRED>

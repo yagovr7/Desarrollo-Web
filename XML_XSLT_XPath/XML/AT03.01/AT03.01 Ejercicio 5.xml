@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<receta>
+<nombre>Sopa de cebola (4 personas)</nombre>
+<comensales>4 personas</comensales>
+
+<ingredientes>Ingredientes:</ingredientes>
+<ingrediente cantidad="1" unidad="Kg" producto="cebolas"/>
+<ingrediente cantidad="2" unidad="L" producto="caldo de carne"/>
+<ingrediente cantidad="100" unidad="gr" producto="mantequilla"/>
+<ingrediente cantidad="1" unidad="cucharada" producto="harina"/>
+<ingrediente cantidad="100" unidad="gr" producto="queixo emmental suizo ou gruere"/>
+<ingrediente producto="Pan en rebanadas"/>
+<ingrediente cantidad="1" unidad="Kg" producto="cebolas"/>
+<ingrediente producto="Tomillo"/>
+<ingrediente cantidad="1" unidad="folla" producto="loureiro"/>
+<ingrediente producto="Pimienta"/>
+
+<proceso>
+	<paso>Pelar e partir as cebolas en toros finos.</paso>
+	<paso>Sofritilas coa manteiga, sal e pementa a lume lento ata que estean transparentes sen dourarse.</paso>
+	<paso>Engadir a fariña sen deixar de remover.</paso>
+	<paso>Poñelo nunha cazola co caldo, o tomiño e o loureiro.</paso>
+	<paso>Deixar cocer a lume lento durante uns 15 minutos.</paso>
+	<paso>Poñer as rebandas de pan encima, empoar o queixo e gratinar ao forno.</paso>
+</proceso>
+</receta>

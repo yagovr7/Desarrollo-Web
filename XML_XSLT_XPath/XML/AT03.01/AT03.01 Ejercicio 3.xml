@@ -1,0 +1,32 @@
+<?xml version="1.1"?>
+
+<agenda>
+
+	<contacto>
+
+		<nombre>Yago</nombre>
+		<apellidos>Vila Rama</apellidos>
+		<direccion>A costa, 59, Malpica, 15111</direccion>
+		<tlf>654-73-39-07</tlf>
+
+	</contacto>
+
+	<contacto>
+
+		<nombre>Sara</nombre>
+		<apellidos>Lusquiños Torres</apellidos>
+		<direccion>Calle Entremuros, 43, 15704</direccion>
+		<tlf>754-83-29-08</tlf>
+
+	</contacto>
+
+	<contacto>
+
+		<nombre>Laura</nombre>
+		<apellidos>Pena Rego</apellidos>
+		<direccion>As Cancelas, 67, 15345</direccion>
+		<tlf>656-78-99-07</tlf>
+
+	</contacto>
+
+</agenda>

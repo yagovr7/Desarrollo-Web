@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<equipos>
+<máquina nombre="PC017">
+ <hardware>
+ <tipo>PC Sobremesa</tipo>
+ <fabricante>Dell</fabricante>
+ <procesador marca="Intel" num_nucleos="4" velocidad="3.1">i7</procesador>
+ <memoria tecnología="DDR3">8</memoria>
+ <disco tecnología="SATA" capacidad="2000"/>
+ <grabadora tipo="DVD"/>
+ </hardware>
+ <config>
+ <OS>Windows 7</OS>
+ <IP>192.168.10.105</IP>
+ <gateway>192.168.20.1</gateway>
+ </config>
+</máquina>
+<máquina nombre="PC053">
+ <hardware>
+ <tipo>Semitorre</tipo>
+ <memoria>0.5</memoria>
+ <disco capacidad="40"/>
+ <lectora tipo="CD"/>
+ </hardware>
+ <config>
+ <OS>Windows XP</OS>
+ </config>
+</máquina>
+<máquina nombre="PC007">
+ <hardware>
+ <tipo>Semitorre</tipo>
+ <memoria tecnología="DDR">0.5</memoria>
+ <disco capacidad="40"/>
+ <lectora tipo="CD"/>
+ </hardware>
+ <config>
+ <OS>Windows XP</OS>
+ </config>
+ <notas>Sin tarjeta de rede</notas>
+</máquina>
+<máquina nombre="PR003">
+ <hardware>
+ <tipo>Impresora Inyección</tipo>
+ <fabricante>Lexmark</fabricante>
+ </hardware>
+ <config/>
+</máquina>
+<máquina nombre="PC011">
+ <hardware>
+ <tipo>Semitorre</tipo>
+ <memoria>1</memoria>
+ <disco capacidad="80"/>
+ <lectora tipo="CD"/>
+ </hardware>
+ <config>
+ <OS>Windows 2000 SP4</OS>
+ <IP>192.168.10.221</IP>
+ </config>
+</máquina>
+<máquina nombre="PC019">
+ <hardware>
+ <tipo>Semitorre</tipo>
+ <procesador marca="AMD" velocidad="1.4">Athlon</procesador>
+ <memoria>0.5</memoria>
+ <disco capacidad="40"/>
+ <grabadora tipo="CD"/>
+ </hardware>
+ <config>
+ <OS>Mandriva 2007</OS>
+ <IP>192.168.10.45</IP>
+ <gateway>192.168.10.1</gateway>
+ </config>
+</máquina>
+<máquina nombre="PR007">
+ <hardware>
+ <tipo>Impresora Láser</tipo>
+ <fabricante>OKI</fabricante>
+ </hardware>
+ <config/>
+ <notas>Monocromo, dúplex, rede</notas>
+</máquina>
+<máquina nombre="COPERNICO">
+ <hardware>
+ <tipo>Torre</tipo>
+ <fabricante>Fujitsu-Siemens</fabricante>
+ <procesador marca="Intel" num_nucleos="4" velocidad="3">Xeon</procesador>
+ <memoria tecnología="DDR">2</memoria>
+ <disco tecnología="SCSI" capacidad="500"/>
+ <disco tecnología="SCSI" capacidad="500"/>
+ <grabadora tipo="DVD"/>
+ </hardware>
+ <config>
+ <role>Servidor de dominio</role>
+ <OS>Windows 2003 Server R2</OS>
+ <IP>192.168.200.11</IP>
+ <gateway>192.168.20.1</gateway>
+ </config>
+</máquina>
+<máquina nombre="GALILEO">
+ <hardware>
+ <tipo>Torre</tipo>
+ <fabricante>Fujitsu-Siemens</fabricante>
+ <procesador marca="Intel" num_nucleos="4" velocidad="3">Xeon</procesador>
+ <memoria tecnología="DDR2">2</memoria>
+ <disco tecnología="SCSI" capacidad="200"/>
+ <disco tecnología="SCSI" capacidad="200"/>
+ <disco tecnología="SCSI" capacidad="200"/>
+ <lectora tipo="DVD"/>
+ </hardware>
+ <config>
+ <role>Servidor de dominio</role>
+ <OS>Windows 2008 Server R2</OS>
+ <IP>192.168.20.10</IP>
+ <gateway>192.168.20.1</gateway>
+ </config>
+</máquina>
+<máquina nombre="KEPLER">
+ <hardware>
+<tipo>Rack</tipo>
+ <fabricante>HP</fabricante>
+ <procesador marca="Intel" num_nucleos="2" velocidad="3">Core2 Duo</procesador>
+ <memoria tecnología="DDR2">4</memoria>
+ <disco tecnología="SATA" capacidad="500"/>
+ <disco tecnología="SATA" capacidad="500"/>
+ <disco tecnología="SATA" capacidad="500"/>
+ <grabadora tipo="DVD"/>
+ </hardware>
+ <config>
+ <role>Servidor de arquivos</role>
+ <OS>Ubuntu 8.04 Server</OS>
+ <IP>192.168.10.10</IP>
+ <gateway>192.168.10.1</gateway>
+ </config>
+</máquina>
+<máquina nombre="NEWTON">
+ <hardware>
+ <tipo>Rack</tipo>
+ <fabricante>HP</fabricante>
+ <procesador marca="Intel" num_nucleos="2" velocidad="3">Core2 Duo</procesador>
+ <memoria tecnología="DDR2">4</memoria>
+ <disco tecnología="SATA" capacidad="500"/>
+ <disco tecnología="SATA" capacidad="500"/>
+ <grabadora tipo="DVD"/>
+ </hardware>
+ <config>
+ <role>Servidor web</role>
+ <OS>Ubuntu 8.04 Server</OS>
+ <IP>192.168.10.11</IP>
+ <gateway>192.168.10.1</gateway>
+ </config>
+</máquina>
+</equipos>

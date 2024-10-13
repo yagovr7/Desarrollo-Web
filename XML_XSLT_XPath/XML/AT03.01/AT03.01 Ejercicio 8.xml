@@ -1,0 +1,61 @@
+<?xml version="1.1"?>
+<centro>
+
+<ciclos>
+
+<ciclo id="ASIR" grado="CS">
+
+<módulo id="MP0370">
+
+	 <nombre>Planificación e administración de redes</nombre>
+	 <horas>213</horas>
+
+</módulo>
+
+ <módulo id="MP0371">
+
+	<nombre>Fundamentos hardware</nombre>
+ 	<horas>107</horas>
+
+ </módulo>
+
+ <matriculado>
+<alum:alumnos xmlns:alum="https://www.servidor.com/alumnos">
+
+ <alum:alumno>
+ <alum:nombre>Juan</alum:nombre>
+ <alum:apellidos>Cancedo da Foz</alum:apellidos>
+ <alum:fechanacimiento>06/11/1991</alum:fechanacimiento>
+ <alum:observaciones>Ya hizo otro ciclo</alum:observaciones>
+ <alum:modulo id="MP0370" nota="9"/>
+ <alum:modulo id="MP0371" nota="7"/>
+ </alum:alumno>
+
+ <alum:alumno>
+ <alum:nombre>Yago</alum:nombre>
+ <alum:apellidos>Vila Rama</alum:apellidos>
+ <alum:fechanacimiento>06/11/1991</alum:fechanacimiento>
+ <alum:observaciones>Ya hizo otro ciclo</alum:observaciones >
+ <alum:modulo id="MP0370" nota="5"/>
+ <alum:modulo id="MP0371" nota="6"/>
+ </alum:alumno>
+
+</alum:alumnos>
+</matriculado>
+
+</ciclo>
+
+<ciclo id="DAW" grado="CS">
+
+ 	<módulo id="MP0380">
+
+	 <nombre>Lenguaje de Marcas</nombre>
+	 <horas>220</horas>
+
+</módulo>
+
+</ciclo >
+
+</ciclos>
+
+</centro>

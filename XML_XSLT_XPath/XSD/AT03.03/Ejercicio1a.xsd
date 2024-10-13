@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="coche">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nombre_del_propietario" type="xs:string"/>
+			<xs:element name="apellidos_del_propietario" type="xs:string"/>
+			<xs:element name="matricula" type="xs:string"/>
+			<xs:element name="kilometros" type="xs:positiveInteger" maxExclusive="10.000.000"/>
+			<xs:element name="fecha_compra" type="xs:dateTime"/>
+			<xs:element name="fecha_de_matriculación" type="xs:date"/>
+			<xs:element name="provincia_de_matriculación" type="xs:string"/>
+			<xs:element name="estado">
+				<xs:simpleContent>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="nuevo|segunda_mano"/>
+					</xs:restriction>
+				</xs:simpleContent>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:element>
+</xs:schema>

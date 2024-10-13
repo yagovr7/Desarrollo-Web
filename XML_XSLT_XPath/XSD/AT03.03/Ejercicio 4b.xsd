@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="direccion">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="calle" type="xs:string" use="required"/>
+				<xs:element name="poblacion" type="xs:string"/>
+				<xs:element name="codpostal" type="xs:integer" use="required"/>
+				<xs:element name="provincia" type="provincia" use="required" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="provincia">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="A Coruña"/>
+			<xs:pattern value="Lugo"/>
+			<xs:pattern value="Ourense"/>
+			<xs:pattern value="Pontevedra"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

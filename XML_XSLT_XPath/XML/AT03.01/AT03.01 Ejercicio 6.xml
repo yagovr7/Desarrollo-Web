@@ -1,0 +1,38 @@
+<?xml version="1.1"?>
+<biblioteca>
+
+<libro id="laruedadeltiempo1">
+
+	<ISBN>9788445007006</ISBN>
+	<titulo>EL OJO DEL MUNDO (LA RUEDA DEL TIEMPO Nº 1)</titulo>
+	<año>2019</año>
+	<editorial>Minotauro</editorial>
+	<autor>Robert Jordan</autor>
+	<descripcion xml:lang="es">
+		Reeditamos la clásica serie de fantasía La Rueda del Tiempo. Este primer volumen incluye los relatos Desde dos ríos y La llaga.
+		La vida de Rand Al’Thor y sus amigos en Campo de Emond ha resultado bastante monótona hasta que una joven misteriosa llega al pueblo. Moraine, una maga capaz de encauzar el Poder Único, anuncia el despertar de una terrible amenaza.
+		Esa misma noche, el pueblo se ve atacado por espantosos trollocs sedientos de sangre, unas bestias semihumanas que hasta entonces se habían considerado una leyenda. Mientras Campo de Emond soporta la ofensiva, Moraine y su guardián ayudan a Rand y a sus amigos a escapar.
+	</descripcion>
+</libro>
+
+<libro id="laruedadeltiempo2">
+
+	<ISBN>9788445007013</ISBN>
+	<titulo>LA GRAN CACERÍA (RUEDA DEL TIEMPO Nº 2)</titulo>
+	<año>2019</año>
+	<editorial>Minotauro</editorial>
+	<autor>Robert Jordan</autor>
+	<descripcion xml:lang="es">
+		Reeditamos la clásica serie de fantasía La Rueda del Tiempo.
+		¡Rand ha sobrevivido a su primer enfrentamiento con los perversos seguidores del Oscuro, pero ni sus amigos ni él están a salvo, ya que el señor del mal ha liberado a los Renegados, mientras los héroes de todas las eras se levantan de la tumba cuando el Cuerno de Valere los saca de su sueño. Al verse obligado a enfrentarse a las fuerzas de la oscuridad, Rand decide escapar de su destino.Pero la profecía tiene que cumplirse.
+		Por su calidad literaria, su ambicioso planteamiento y su descomunal historia, La Rueda del Tiempo es la saga de fantasía más importante de los últimos treinta años. El lector que inicie el camino junto a Rand, Mat y Perrin no podrá abandonar el viaje hasta su incierto y sorprendente final.
+	</descripcion>
+</libro>
+</biblioteca>
+
+
+
+
+
+
+

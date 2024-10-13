@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="Ejercicio2b.xsl"?>
+<venta>
+ <cliente cod="CL09384" num_productos="5"/>
+ <productos>
+ <producto cod="LACT093" />
+ <producto cod="LACT012" />
+ <producto cod="ACEI015" />
+ <producto cod="AUGA005" />
+ <producto cod="CONS121" />
+ </productos>
+</venta>

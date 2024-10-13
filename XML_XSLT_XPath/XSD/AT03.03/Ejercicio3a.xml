@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guarderia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="AT03.03.04a.xsd">
+ <niño numeroExpediente="2344">
+ <nombre>Noa Blanco Coello</nombre>
+ <fechaNacemento>2010-10-12</fechaNacemento>
+ <peso>13.5</peso>
+ <altura>78</altura>
+ <vacunas>true</vacunas>
+ </niño>
+</guarderia>
+
+<!--XSD-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="guarderia">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="niño">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="nombre" type="xs:string"/>
+							<xs:element name="fechaNacemento" type="xs:date"/>
+							<xs:element name="peso" type="xs:decimal"/>
+							<xs:element name="altura" type="xs:integer"/>
+							<xs:element name="vacunas" type="xs:boolean"/>
+						</xs:sequence>
+							<xs:attribute name="numeroExpediente" type="xs:integer"/>
+							
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

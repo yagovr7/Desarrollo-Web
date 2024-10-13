@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE famosos [
+ <!ELEMENT famosos (famoso*)>
+ <!ELEMENT famoso ((nombre | apodo), profesion+, fechaNacimiento?)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT apodo (#PCDATA)>
+ <!ELEMENT profesion (#PCDATA)>
+ <!ELEMENT fechaNacimiento (#PCDATA)>
+]>
+<famosos>
+
+	 <famoso>
+		 <nombre>Michael Jackson</nombre>
+		 <apodo>El rey del pop</apodo>
+		 <profesion>cantante</profesion>
+	 </famoso>
+
+	<famoso>
+		 <nombre>Frank Sinatra</nombre>
+		 <apodo>La voz</apodo>
+		 <profesion>cantante</profesion>
+		 <profesion>actor</profesion>
+		 <fechaNacimiento>12-dec-1915</fechaNacimiento>
+	 </famoso>
+
+</famosos>
+

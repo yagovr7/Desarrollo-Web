@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mensaje SYSTEM "Ejercicio3.dtd">
+<mensaje>
+	 <de>A21YagoVR@iessanclemente.net</de>
+	 <para>brais@iessanclemente.net</para>
+	 <para>pedro@edu.xunta.es</para>
+	 <cuerpo></cuerpo>
+	 <asunto>Envíoche os arquivos</asunto>
+	 <adjunto>D:\fotos\dePesca.jpg</adjunto>
+	 <adjunto>D:\docs\carta.odt</adjunto>
+	 <adjunto>D:\fotos\naCea.jpg</adjunto>
+</mensaje>

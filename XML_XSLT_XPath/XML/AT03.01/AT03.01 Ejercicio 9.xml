@@ -1,0 +1,82 @@
+<?xml version="1.1"?>
+<videoteca>
+
+<peliculas data_creación="24/02/2009">
+
+ <pelicula id="1">
+ <importe>$13,56</importe>
+ <nombre>El santo</nombre>
+ <titulooriginal>The Saint</titulooriginal>
+ <ano>1997</ano>
+ <director>Phillip Noyce</director>
+ <genero>Acción</genero>
+ <duracion>111</duracion>
+ <sinopsis xml:lang="en">Simon se educó en un durísimo orfanato y allí tuvo que aprender muchos trucos. Años después, era el más famoso ladrón del mundo, a punto de completar cincuenta millones de dólares en su cuenta. Los mismos empresarios rusos a los que robó un valioso microchip, le contratan para una difícil misión: arrebatar a una bella científica el secreto de la fusión nuclear.</sinopsis>
+
+ <act:actores xmlns:act="http://www.servidor.com/actores">
+<act:actor id="51">
+ <act:nombre>Elisabeth Shue</act:nombre>
+ <act:sexo>mujer</act:sexo>
+ <act:fecnacimiento>06/10/1963</act:fecnacimiento>
+ <act:url>http://www.imdb.com/name/nm0000223/</act:url>
+ </act:actor>
+
+ <act:actor id="156">
+ <act:nombre>Val Kilmer</act:nombre>
+ <act:sexo>hombre</act:sexo>
+ <act:fecnacimiento>31/12/1959</act:fecnacimiento>
+ </act:actor>
+ </act:actores>
+
+ </pelicula>
+
+
+ <pelicula id="3">
+ <importe>22,18€</importe>
+ <nombre>Leaving Las Vegas</nombre>
+ <titulooriginal>Leaving Las Vegas</titulooriginal>
+ <ano>1995</ano>
+ <director>Mike Figgis</director>
+ <genero>Drama</genero>
+ <duracion>107</duracion>
+ <sinopsis>Ben Sanderson (Nicolas Cage), un guionista alcohólico, acaba de perder su trabajo en Hollywood debido a que sus problemas con la bebida afectan a su rendimiento. Sin amigos y sin familia, decide ir a Las Vegas con el propósito de beber hasta morir. Nada más llegar a la ciudad, conoce a Sera (Elisabeth Shue), una atractiva prostituta que trabaja en la calle de la que se queda prendado.</sinopsis>
+
+<act:actores xmlns:act="http://www.servidor.com/actores">
+ <act:actor id="51">
+ <act:nombre>Elisabeth Shue</act:nombre>
+ <act:sexo>mujer</act:sexo>
+ <act:fecnacimiento>06/10/1963</act:fecnacimiento>
+ <act:url>http://www.imdb.com/name/nm0000223/</act:url>
+ </act:actor>
+ 
+ <act:actor id="187">>
+ <act:nombre>Nicolas Cage</act:nombre>
+ <act:sexo>hombre</act:sexo>
+ <act:fecnacimiento>07/01/1964</act:fecnacimiento>
+ </act:actor>
+ </act:actores>
+ </pelicula>
+
+ <pelicula id="4">
+ <importe>$11,52</importe>
+ <nombre>¿A quién ama Gilbert Grape?</nombre>
+ <titulooriginal>What's Eating Gilbert Grape?</titulooriginal>
+ <ano>1993</ano>
+ <director>Lasse Hallström</director>
+ <genero>Drama</genero>
+ <duracion>118</duracion>
+ <sinopsis>En Endora, un pequeño pueblo del Medio Oeste americano, vive Gilbert Grape (Johnny Depp), un joven empleado de una tienda de ultramarinos que vive abrumado por sus responsabilidades familiares: tiene que cuidar de una madre inmensamente obesa y de un hermano con discapacidad mental (DiCaprio). Tiene una aventura con una mujer casada (Mary Steenburgen), pero su vida emocional y personal cambiará por completo gracias a la aparición de Becky (Juliette Lewis), una chica divertida y de espíritu libre. </sinopsis>
+ 
+ <act:actores xmlns:act="http://www.servidor.com/actores">
+ <act:actor id="139">
+ <act:nombre>Johnny Depp</act:nombre>
+ <act:sexo>hombre</act:sexo>
+ <act:fecnacimiento>09/06/1963</act:fecnacimiento>
+ <act:url>http://www.imdb.com/name/nm0000136/</act:url>
+ </act:actor>
+</act:actores>
+
+ </pelicula>
+
+</peliculas>
+</videoteca>
