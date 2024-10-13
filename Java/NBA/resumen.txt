@@ -1,0 +1,3 @@
+Galaxy:New York:Oeste
+Lakers:Los Angles:Este
+Warriors:Oklahoma:Oeste
