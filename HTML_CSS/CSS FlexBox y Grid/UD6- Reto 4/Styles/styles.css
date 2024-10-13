@@ -1,0 +1,206 @@
+::after *, ::before * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 11px;
+    font-family: sans-serif;
+    background-color: rgb(231, 228, 228);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(auto, 250px));
+    grid-template-rows: repeat(2,minmax(auto, max-content));
+    grid-gap: 1rem;
+}
+
+.card__template {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.card__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card__imagen{
+    border-radius: 50px;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.card__template--one {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(142, 57, 221);
+    color: whitesmoke;
+}
+
+.card__template--one img {
+    outline: 5px solid rgb(196, 158, 231);
+}
+
+.card__template--two {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-color: #536878;
+    color: whitesmoke;
+}
+
+.card__template--three {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: white;
+    color: rgb(105,105,105);
+}
+
+.card__template--three p {
+    padding: 0px 25px 0px 25px;
+    height: 100%;
+}
+
+.card__template--four {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: white;
+    color: rgb(105,105,105);
+}
+
+.card__template--five {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    background-color: #32383d;
+    color: whitesmoke;
+}
+
+.card__template--five img {
+    outline: 5px solid rgb(137, 72, 199);
+}
+
+@media (min-width: 376px) and (max-width: 850px) {
+    main {
+        width: 60vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, max-content));
+        grid-template-rows: repeat(3, minmax(auto, max-content));
+        grid-gap: 1rem;
+    }
+
+    .card__template--one {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-color: rgb(142, 57, 221);
+        color: whitesmoke;
+    }
+
+    .card__template--two {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        background-color: #536878;
+        color: whitesmoke;
+    }
+
+    .card__template--three {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        background-color: white;
+        color: rgb(105,105,105);
+    }
+
+    .card__template--four {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-color: white;
+        color: rgb(105,105,105);
+    }
+
+    .card__template--five {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        background-color: #32383d;
+        color: whitesmoke;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 80vw;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: minmax(auto, max-content);
+        grid-template-rows: repeat(5, minmax(auto, max-content));
+        grid-gap: 1rem;
+    }
+
+    .card__template--one {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        background-color: rgb(142, 57, 221);
+        color: whitesmoke;
+    }
+
+    .card__template--two {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        background-color: #536878;
+        color: whitesmoke;
+    }
+
+    .card__template--three {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        background-color: white;
+        color: rgb(105,105,105);
+    }
+
+    .card__template--four {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        background-color: white;
+        color: rgb(105,105,105);
+    }
+
+    .card__template--five {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+        background-color: #32383d;
+        color: whitesmoke;
+    }
+}

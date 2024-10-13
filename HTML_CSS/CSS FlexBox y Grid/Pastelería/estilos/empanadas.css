@@ -1,0 +1,49 @@
+/* Estilos Empanadas */
+
+body{
+    background: no-repeat center center fixed;
+}
+section{
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.pan{
+    background-image: url("../imagenes/gris.jpg");
+    width: 540px;
+    height: 250px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 40px;
+    box-shadow: 5px 5px 10px;
+}
+
+.titulo{
+    text-align: right;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    top: 5px;
+    padding: 5px;
+    float: left;
+    
+}
+.ingredientes{
+    text-align: left;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    font-size: 12px;
+    top: 20px;
+    right:50px;
+
+
+}
+
+
+.img{
+    width: 250px;
+    height: 180px;
+    float: right;
+}

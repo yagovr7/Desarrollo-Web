@@ -1,0 +1,203 @@
+::before *, ::after * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+#page {
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(224, 222, 222);
+    position: relative;
+    margin: 0;
+}
+
+/*Estilos header*/
+
+h1 {
+    color: #4C579E;
+    text-transform: uppercase;
+}
+
+h1 span {
+    color: #df9d90;
+}
+
+h2 {
+    font-style: italic;
+    color: #585453;
+}
+
+/*Estilos Main*/
+
+main {
+    width: max-content;
+    height: auto;
+    margin: 0 auto;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.album li a img{
+    width: 150px;
+    height: 150px;
+    outline: 5px solid #ebc1b9;
+    border-radius: 5px;
+}
+
+.album li {
+    list-style: none;
+    width: 150px;
+    height: 150px;
+}
+
+.album li a img {
+    object-fit: cover;
+}
+
+.album li a{
+    text-decoration: none;
+    position: relative;
+}
+
+.album li:not(:hover) span {
+    opacity: 0;
+}
+
+.album li a:hover img{
+    filter: blur(1px);
+}
+
+.album li .lb-emergente {
+    display: none;
+}
+
+.album li .lb-emergente:target {
+    display: block;
+    
+}
+
+.lb-Cerrar {
+    background-color: gray;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    width: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 10px;
+    color: white;
+}
+
+.album li .lb-emergente {
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(80,44,45,1) 0%, rgba(223,157,144,0.5192341549295775) 0%);
+}
+
+.album li .lb-emergente img {
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.album li a span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 75px;
+    font-size: 1.2rem;
+    color: #4C579E;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    object-fit: cover;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+    fill: gray;
+}
+
+.PrevNext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+
+h3 {
+    float: left;
+    margin-right: 10px;
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    text-transform: capitalize;
+    color: #585453;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+h3 span{
+    float: left;
+    width: 100%;
+    margin-right: 10px;
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    text-transform: capitalize;
+    color: #585453;
+    font-size: .8rem;
+}
+
+.descrip {
+    width: 25%;
+    margin: 0 auto;
+}
+
+.descrip p {
+    font-style: italic;
+    color: #4e4846;
+}
+
+footer {
+    color: #e69889;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (max-width: 720px) {
+    .album {
+        width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .album {
+        width: 200px;
+    }
+}

@@ -1,0 +1,52 @@
+$bg-dia: #FFEC8B;
+$color-dia: #000;
+$bg-noche: #2F3277;
+$color-noche: #EB4C49;
+$fuente: 'Helvetica', sans-serif;
+
+body{
+    background-color: $bg-dia;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p#modal{
+        visibility: hidden;
+    }
+    button{
+        border: none;
+        background-color: #000;
+        color: white;
+        font: {
+            size: 2rem;
+            family: $fuente;
+            weight: 600;
+        };
+
+        letter-spacing: 2px;
+        padding: 1.61rem 1rem;
+        text-transform: uppercase;
+        width: auto;
+    }
+
+    &.modo-luna{
+        color: $color-noche;
+        background-color: $bg-noche;
+
+        & span {
+            visibility: hidden;
+            position: relative;
+            display: inline-block;
+
+            &::after{
+                visibility: visible;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '\274D';
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --color-fondo-pagina: #ffefea;
+  --color-fondo-texto: darksalmon;
+  --color-fondo-caja: #333;
+  font-size: 16px;
+}
+
+body {
+  background: var(--color-fondo-pagina);
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Estilos contenedor principal - contiene toda la página */
+.container {
+  margin: auto;
+  padding: 1.25rem;
+}
+
+/* Estilos del botón de selección de la voz */
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 20px;
+  background-color: var(--color-fondo-texto);
+}
+
+.btn:active {
+
+}
+
+
+
+.btn:focus,
+select:focus {
+  outline: 0;
+} 
+
+
+/* Estilos de la caja de texto de elección de la voz */
+.text-box {
+  width: 70%;
+  /* posicionado a 30% de la parte superior de la ventana y al 50% de la izquierda*/
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  /* para que no se vea empleamos una transformación que la traslada
+  -50% del eje de las X y -800px del eje de las Y */
+  transform: translateX(-50%) translateY(-800px);
+  /* tiene una animación de 1s con curva bezier más lento a la entrada que a la salida */
+  transition: all 1s ease-in-out;
+}
+
+/* para poner la caja de selección de la voz a la vista se empleará 
+javascript empleando una clase llamada .show - para las pruebas solo tienes que poner esta clase en
+el elemento en el html.*/
+.text-box.show {
+  transform: translateX(0) translateY(0);
+}
+
+.text-box select {
+  font-size: .75rem;
+}
+
+.text-box textarea {
+  font-size: 1rem;
+  padding: 8px;
+  margin: 15px 0;
+  width: 100%;
+  height: 150px;
+}
+
+
+/****** Estilos del main *****/
+main{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 1rem;
+}
+
+#text{
+  display: none;
+}
+/* estilos cajas de las imágenes */
+
+.box {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease-out;
+  background-color: var(--color-fondo-texto);
+
+}
+
+/* emplearemos una clase (a usar en el javascript) llamada .activa para  cuando pasemos sobre la caja con 
+la imagen y el texto */
+
+.box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.box .info {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.625rem;
+
+}
+
+/** Estilos del pie **/
+footer{
+  text-align: center;
+  color: #666;
+  font-size: .8rem;
+}
+
+@media (max-width: 560px){
+  main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12,1fr);
+    grid-gap: 1rem;
+    margin: 0 auto;
+    width: 70vw;
+  }
+
+  .box{
+    width: 100%;
+  }
+
+  .box img{
+    object-fit: cover;
+  }
+}
+

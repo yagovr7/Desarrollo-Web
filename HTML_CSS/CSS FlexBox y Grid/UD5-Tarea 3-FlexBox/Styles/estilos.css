@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --enlaces: #dc7c1d;
+    --color-texto-cabecera-pie-sobrenlaces: #ffffff;
+    --color-fodo-figure: #000000;
+    --color-fondo-main: #212121;
+    --color-fondo-modo-camino: rgba(0,0,0,0.76);
+    --figure-azul: #123851;
+    --figure-rojo: #581a14;
+    --figure-amarillo: #7f5006;
+    --figure-verde: #083616;
+    --figure-violeta: #2b0836;
+    --h2-azul: #0a212f;
+    --h2-rojo: #36100c;
+    --h2-amarillo: #583804;
+    --h2-verde: #083616;
+    --h2-violeta: #2b0836;
+    font: 'Roboto Slab', 'Georgia', 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background: url(../imagenes/Catedral_de_santiago.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 1% 0px 0px 2%;
+    background: rgb(220, 125, 29, .6);
+}
+
+.cabecera div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cabecera div h1{
+    font-size: 3vw;
+    color: white;
+}
+
+/* Main */
+section.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-fondo-main);
+}
+
+figure.figuraruta{
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    margin: 10px;
+    max-width: 230px;
+    max-height: 220px;
+    width: 100%;
+    background-color: black;
+    color: var(--color-texto-cabecera-pie-sobrenlaces);
+    text-align: center;
+    box-shadow:0px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+
+figure.figuraruta img{
+    max-width: 230px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: .4;
+    overflow: hidden;
+}
+
+figure.figuraruta:hover img{
+    z-index: 99;
+    opacity: 1;
+}
+
+figure.figuraruta figcaption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+figure.figuraruta figcaption h2{
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    top: 50%;
+    opacity: .8;
+    transform: skew(-10deg) rotate(-10deg) translateX(0,-50%);
+    padding: 12px 5px 12px 5px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 400;
+    z-index: 1;
+}
+
+figure.figuraruta h2 span{
+    font-weight: 800;
+}
+
+figure.rojo::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, var(--figure-rojo) 50%, white 50%);
+    transition: all 0.3s ease-in-out;
+    opacity: .4;
+    filter: brightness(1);
+}
+
+figure:hover:after{
+    transform: translate(100%);
+}
+
+figure.verde::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, var(--figure-verde) 50%, white 50%);
+    transition: all 0.3s ease-in-out;
+    opacity: .4;
+}
+
+figure.azul::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, var(--figure-azul) 50%, white 50%);
+    transition: all 0.3s ease-in-out;
+    opacity: .4;
+}
+
+figure.amarillo::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, var(--figure-amarillo) 50%, white 50%);
+    transition: all 0.3s ease-in-out;
+    opacity: .4;
+}
+
+figure.violeta::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(110deg, var(--figure-violeta) 50%, white 50%);
+    transition: all 0.3s ease-in-out;
+    opacity: .4;
+}
+
+figure.figuraruta a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+figure.figuraruta:hover figcaption h2{
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+    transform: translateX(-200%);
+}
+
+
+figure.figuraruta figcaption h2{
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    z-index: 99;
+    opacity: 1;
+}
+
+figure.rojo figcaption h2{
+    background-color: var(--figure-rojo);
+}
+
+
+figure.verde figcaption h2{
+    background-color: var(--figure-verde);
+}
+
+figure.azul figcaption h2{
+    background-color: var(--figure-azul);
+}
+
+figure.amarillo figcaption h2{
+    background-color: var(--figure-amarillo);
+}
+
+figure.violeta figcaption h2{
+    background-color: var(--figure-violeta);
+}
+
+
+/* Contenedor Modo */
+
+section.modos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 2% 0 2% 0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section.modos figure img{
+    max-width: 150px;
+    width: 100%;
+    border-radius: 100%;
+}
+
+section.modos figure img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+section.modos figure h2{
+    color: var(--enlaces);
+}
+
+section.modos figure h2:hover{
+    color: var(--color-texto-cabecera-pie-sobrenlaces);
+}
+
+section.modos p{
+    color: var(--color-texto-cabecera-pie-sobrenlaces);
+    font-weight: 800;
+    font-size: 1.5rem;
+    
+}
+
+section.modos::after{
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.76);
+    z-index: -1;
+}
+
+/* Footer */
+
+footer{
+   
+    padding: 1% 0px 0px 2%;
+    background-color: rgb(220, 125, 29, .6);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.1rem;
+}
+
+footer p{
+    color: var(--color-texto-cabecera-pie-sobrenlaces);
+}
+

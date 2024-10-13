@@ -1,0 +1,456 @@
+::after *, ::before * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 14px;
+}
+
+body {
+    margin: 0 auto;
+    width: 50vw;
+    height: auto;
+}
+
+/*Styles Header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+}
+
+div.botones {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+.suscribete {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: goldenrod;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px;
+    border: none;
+}
+
+.botones figure img {
+    width: 25px;
+    height: 25px;
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.circulo {
+    width: 45px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50px;
+    background-color: black;
+    display: flex;
+    color: white;
+    padding: 2px;
+}
+
+figure.circulo a {
+    width: 16px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.circulo:active {
+    justify-content: end;
+    background-color: green;
+}
+
+nav {
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'sanchez';
+    font-weight: bold;
+}
+
+/*Estilos Main*/
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.primero {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3, minmax(auto, max-content));
+    grid-template-rows: repeat(5, minmax(auto, max-content));
+    grid-gap: 10px;
+    padding: 0px 20px 0px 20px;
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.nombre {
+    color: gray;
+}
+
+p.nombre {
+    text-align: left;
+}
+
+p.texto {
+
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+h2 {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.uno {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border-right: 1px solid black;
+}
+
+.dos {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.dos p.texto {
+    border-bottom: 1px solid black;
+}
+
+.tres {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.tres p.texto {
+    border-bottom: 1px solid black;
+}
+
+.cuatro {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-right: 2px solid gray;
+}
+
+.cuatro p.texto {
+    border-bottom: 1px solid black;
+}
+
+.cinco {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border-right: 2px solid gray;
+}
+
+
+.separacion {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.seis {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.seis p.texto {
+    border-bottom: 1px solid black;
+}
+
+.siete {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin-top: 5%;
+}
+
+.siete img {
+    width: 80%;
+    height: auto;
+}
+
+.ocho {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    text-align: center;
+}
+
+.ocho img {
+    width: 80%;
+    height: auto;
+}
+
+.ocho h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5%;
+}
+
+.nueve {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.diez {
+    grid-column: 3/4;
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.seis, .siete, .nueve, .diez {
+    border-right: 1px solid gray;
+    margin-right: 20px;
+}
+
+.nueve {
+    border-left: 1px solid gray;
+}
+
+
+/* Media Queries Tablet*/
+
+@media (max-width: 720px) {
+
+    :root{
+        font-size: .7rem;
+    }
+
+    nav{
+        font-size: .8rem;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+
+    body{
+        width:70vw;
+    }
+
+    .segundo {
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(2, minmax(auto, max-content));
+        grid-template-rows: repeat(6, minmax(auto, max-content));
+        grid-gap: 10px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .uno {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-right: 1px solid black;
+    }
+
+    .dos {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border-right: 1px solid black;
+    }
+
+    .tres {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        border-right: 1px solid black;
+    }
+
+    .cuatro {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border-right: 1px solid black;
+    }
+
+    .cinco {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border-right: 1px solid black;
+    }
+
+    .separacion {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        border-right: 1px solid black;
+    }
+
+    .seis {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        border-right: 1px solid black;
+    }
+
+    .siete {
+        display: none;
+    }
+
+    .ocho {
+        grid-column: 2/3;
+        grid-row: 5/7;
+        border-right: 1px solid black;
+    }
+
+    .nueve {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        border-right: 1px solid black;
+    }
+
+    .diez {
+        display: none;
+    }
+
+}
+
+/* Media Queries Movil*/
+
+@media (max-width: 480px) {
+
+    :root{
+        font-size: .7rem;
+    }
+
+    .nav{
+        display: grid;
+        width: 50%;
+        margin: 0 ;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+
+    body{
+        width:100vw;
+    }
+
+    .segundo {
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, minmax(auto, max-content));
+        grid-gap: 10px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .uno {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-right: 1px solid black;
+    }
+
+    .dos {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        border-right: 1px solid black;
+    }
+
+    .tres {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border-right: 1px solid black;
+    }
+
+    .cuatro {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        border-right: 1px solid black;
+    }
+
+    .cinco {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        border-right: 1px solid black;
+    }
+
+    .separacion {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        border-right: 1px solid black;
+    }
+
+    .seis {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        border-right: 1px solid black;
+    }
+
+    .siete {
+        grid-column: 1/2;
+        grid-row: 8/9;
+        border-right: 1px solid black;
+    }
+
+    .ocho {
+        grid-column: 1/2;
+        grid-row: 9/10;
+        border-right: 1px solid black;
+    }
+
+    .nueve {
+        grid-column: 1/2;
+        grid-row: 10/11;
+        border-right: 1px solid black;
+    }
+
+    .diez {
+        grid-column: 1/2;
+        grid-row: 11/12;
+        border-right: 1px solid black;
+    }
+
+}

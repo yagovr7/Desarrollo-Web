@@ -1,0 +1,62 @@
+/* Cafeteria*/
+body{
+    background: no-repeat center center fixed;
+}
+.main{
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+    margin-top: 20px;
+}
+
+.der {
+    border-radius: 15px;
+    float: right;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 5px 5px 10px;
+    top: 100px;
+
+}
+
+.izq {
+    border-radius: 15px;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 5px 5px 10px;
+
+}
+
+.expresso{
+    margin: 0 auto;
+    width: 70%;
+    
+}
+
+.expresso p{
+    width: 50%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    position: relative;
+
+}
+
+.italiana p{
+    width: 50%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    position: relative;
+    top: 30px;
+    text-align: right;
+
+}
+
+.italiana{
+    margin: 0 auto;
+    width: 70%;
+
+}
+

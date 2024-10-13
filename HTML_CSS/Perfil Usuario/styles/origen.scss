@@ -1,0 +1,144 @@
+$color-letra: #0e3733;
+$color-icono: #0d8e81;
+$color-fondo: #c6c6c6;
+
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin anchoAltoIMG($ancho: 200px, $alto: 200px){
+	width: $ancho;
+	height: $alto;
+}
+
+@mixin definirAnimacion($animacion){
+    animation: $animacion;
+    -o-animation: $animacion;
+    -moz-animation: $animacion;
+    -webkit-animation: $animacion;
+}
+
+@mixin keyframe($nombre){
+	@keyframes #{$nombre} {
+		@content;
+	}
+
+	@-moz-keyframes #{$nombre} {
+		@content;
+	}
+
+	@-o-keyframes #{$nombre} {
+		@content;
+	}
+
+	@-webkit-keyframes #{$nombre} {
+		@content;
+	}
+}
+
+@mixin animacionLoader(){
+	from{
+		opacity: 0.95;
+	}
+	to{
+		opacity: 0;
+		z-index: 0;
+	}
+}
+
+@mixin Circulos(){
+	from{
+		transform: scale(0.2);
+	}
+	40%{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(0.2);
+	}
+	
+}
+
+body{
+	background-color: $color-fondo;
+	color: $color-letra;
+}
+
+.loader{
+	z-index: 1;
+	div{
+		width: 40px;
+		height: 40px;
+		margin: 10px;background-color: $color-icono;
+		border-radius: 50%;
+		$animation: escalar 2s ease-in-out infinite;
+		@include definirAnimacion($animation);
+		@include keyframe("escalar"){
+			@include Circulos();
+		}
+	}
+	&{
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		$animacion: loader 5s linear forwards;
+		@include definirAnimacion($animacion);
+		@include keyframe("loader"){
+			@include animacionLoader();
+		}
+	}
+	div:nth-of-type(1){
+		animation-delay: 0.2s;
+	}
+	div:nth-of-type(2){
+		animation-delay: 0.4s;
+	}
+	div:nth-of-type(3){
+		animation-delay: 0.6s;
+	}
+}
+
+.profile{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	h1,h2{
+		text-align: center;
+	}
+	background-color: white;
+	padding: 10px;
+
+	.avatar{
+		position: relative;
+		.img{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			margin: 0 auto;
+			background-size: contain;
+		}
+		label{
+			position: absolute;
+			background-color: #0d8e81;
+			border-radius: 50%;
+			font-size: 1.5rem;
+			bottom: 1rem;
+			right: 1rem;
+			padding: 0.8rem;
+			color: white;
+		}
+		#file-uploader{
+			display: none;
+		}
+	}
+}
+
