@@ -1,0 +1,6 @@
+{"contactos":
+    [ {"nombre": "Roberto", "idiomas": ["inglés", "francés"]},
+    {"nombre": "Margarita", "idiomas": ["rumano", "chino"]},
+    {"nombre": "Berta","edad": 12,"hijos": "None"}
+    ]
+}

@@ -1,0 +1,19 @@
+<?php
+//Para cargar script sobre base de datos
+mysql -u usuario -p proyecto < crearTablas.sql
+o
+mysql>create database mi_base_de_datos CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+
+//Otros comandos
+mysqladmin --help
+sudo mysqladmin status
+sudo mysqladmin version
+
+//Crear base de datos
+sudo mysqladmin -u root create miBase
+
+//Crear usuario con permisos
+sudo mysql -u root
+mysql>create user admin@'localhost' identified by 'secreto';
+mysql>grant all on *.* to admin@'localhost' with grant option;
+mysql>flush privileges;

@@ -1,0 +1,14 @@
+{"lectura":[
+    {"enero":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"febrero":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"marzo":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"abril":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"mayo":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"junio":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"julio":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"agosto":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"septiembre":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"noviembre":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}},
+    {"diciembre":{"bajo":"30€", "primero":"50€", "segundo":"70€", "tercero":"100€"}}
+]
+}

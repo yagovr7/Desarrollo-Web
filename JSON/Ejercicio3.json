@@ -1,0 +1,13 @@
+{"pedido":
+{
+    "identificador":"1234",
+    "importe":"146,00€",
+    "cliente":
+        {"DNI":"49675297N","nombre":"Yago"},
+    "lineasPedido":[
+        {"producto":{"id":"2", "descripcion":"mesa"}},
+        {"cantidad":"1"},
+        {"importe":23}
+    ]
+}
+}

@@ -1,0 +1,50 @@
+{"horario":[
+
+    {"Lunes":[
+        {"fechain":"16:20", "asignatura":"LSMXI"},
+        {"fechain":"17:10", "asignatura":"LSMXI"},
+        {"fechain":"18:00", "asignatura":"LSMXI"},
+        {"fechain":"18:50", "asignatura":"BBDD"},
+        {"fechain":"19:40", "asignatura":"BBDD"},
+        {"fechain":"20:30", "asignatura":"SI"},
+        {"fechain":"21:20", "asignatura":"SI"}]
+    },
+    {"Martes":[
+        {"fechain":"16:20", "asignatura":"CD"},
+        {"fechain":"17:10", "asignatura":"CD"},
+        {"fechain":"18:00", "asignatura":"SI"},
+        {"fechain":"18:50", "asignatura":"SI"},
+        {"fechain":"19:40", "asignatura":"PROG"},
+        {"fechain":"20:30", "asignatura":"PROG"},
+        {"fechain":"21:20", "asignatura":"PROG"}]
+    },
+    {"Miercoles":[
+        {"fechain":"16:20", "asignatura":"LSMXI"},
+        {"fechain":"17:10", "asignatura":"LSMXI"},
+        {"fechain":"18:00", "asignatura":"PROG"},
+        {"fechain":"18:50", "asignatura":"PROG"},
+        {"fechain":"19:40", "asignatura":"PROG"},
+        {"fechain":"20:30", "asignatura":"BBDD"},
+        {"fechain":"21:20", "asignatura":"BBDD"},
+        {"fechain":"22:10", "asignatura":"BBDD"}]
+    },
+    {"Jueves":[
+        {"fechain":"16:20", "asignatura":"PROG"},
+        {"fechain":"17:10", "asignatura":"PROG"},
+        {"fechain":"18:00", "asignatura":"PROG"},
+        {"fechain":"18:50", "asignatura":"BBDD"},
+        {"fechain":"19:40", "asignatura":"BBDD"},
+        {"fechain":"20:30", "asignatura":"FOL"},
+        {"fechain":"21:20", "asignatura":"FOL"}]
+    },
+    {"Viernes":[
+        {"fechain":"16:20", "asignatura":"CD"},
+        {"fechain":"17:10", "asignatura":"CD"},
+        {"fechain":"18:00", "asignatura":"SI"},
+        {"fechain":"18:50", "asignatura":"SI"},
+        {"fechain":"19:40", "asignatura":"SI"},
+        {"fechain":"20:30", "asignatura":"FOL"},
+        {"fechain":"21:20", "asignatura":"FOL"}]
+    }
+]
+}

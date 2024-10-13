@@ -1,0 +1,68 @@
+{
+    "instituto":
+    [
+        {
+            "nombre":"San Clemente",
+            "planta":
+            [
+                {
+                    "nombre":"Planta 1",
+                    "aulas":
+                    [
+                        {
+                            "numero":1,
+                            "equipos":
+                            [
+                                {
+                                    "numero":"EQ01",
+                                    "IP":"10.0.0.2"
+                                },
+                                {
+                                    "numero":"EQ02",
+                                    "IP":"10.0.0.3"
+                                }
+                            ],
+                            "alumnos":
+                            [
+                                {
+                                    "nombre":"Yago Vila Rama",
+                                    "nota":10
+                                },
+                                {
+                                    "nombre":"Karim Benzema",
+                                    "nota":9
+                                }
+                            ]
+                        },
+                        {
+                            "numero":2,
+                            "equipos":
+                            [
+                                {
+                                    "numero":"EQ03",
+                                    "IP":"10.0.0.2"
+                                },
+                                {
+                                    "numero":"EQ04",
+                                    "IP":"10.0.0.3"
+                                }
+                            ],
+                            "alumnos":
+                            [
+                                {
+                                    "nombre":"Earling Braul Halaand",
+                                    "nota":10
+                                },
+                                {
+                                    "nombre":"Cristiano Ronaldo",
+                                    "nota":9
+                                }
+                            ]
+                        }
+                    ]
+                    
+                }
+            ]
+        }  
+    ]
+}

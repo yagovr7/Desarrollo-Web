@@ -1,0 +1,12 @@
+{"cliente":
+{
+    "DNI":"49675297N",
+    "nombre":"Yago",
+    "apellidos":"Vila Rama",
+    "direcciones":[
+        {"calle":"A Costa", "numero":"59", "CP":"15111"},
+        {"calle":"Entremuros", "numero":"21", "CP":"15740"}
+    ]
+    
+}
+}

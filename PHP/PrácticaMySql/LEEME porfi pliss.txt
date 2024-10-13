@@ -1,0 +1,15 @@
+IMPORTANTE!!! Usuario con permisos totales sobre el servidor para, crear bases de datos, tablas, etc...
+
+· Logearte con tu usuario con permisos totales y contraseña en caso de tenerla, si la conexión es exitosa
+el icono de Desconectado debería aparecer como Conectado y mostrarse los botones para ejecutar el ejercicio.
+
+· Para comprobar que tanto el INSERT, UPDATE y DELETE funcionan apoyate en la consulta de la tabla graficas (Botón Gráficas)
+para ver como se inserta, se modifica y se elimina el registro.
+
+· Utiliza los botones para comprobar el funcionamiento del ejercicio:
+    - Botón Ver Tablas: visualiza las tablas de la base de datos creada (SELECT).
+    - Botón Graficas: consulta sobre la base de datos creada y visualiza los elementos (SELECT).
+    - Botón Insert: inserta un registro en la base de datos con marca 'EjemploMarca' y modelo 'EjemploModelo' (INSERT).
+    - Botón Update: modifica el registro cambiandole los campos de marca y modelo si sumple la condición del WHERE (UPDATE).
+    - Botón Delete: elimina el registro que cumpla la condición del WHERE (DELETE).
+
