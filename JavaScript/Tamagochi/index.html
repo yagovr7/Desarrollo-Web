@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagochi</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/functions.js"></script>
+</head>
+<body onload="stats()">
+    <header id="stats">
+        <h1>Stats</h1>
+        <p>Felicidad <span id="felicidad"></span></p>
+        <p>Energía <span id="energia"></span></p>
+        <p>Salud <span id="salud"></span></p>
+        <p>Limpieza <span id="limpieza"></span></p>
+    </header>
+    <main>
+
+        <section id="personaje">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.475/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/vGF9dUEYnhvkhtxv/scene.splinecode"></spline-viewer>
+        </section>
+        
+        <section id="botones">
+            <button onclick="alimentar()">Alimentar</button>
+            <button onclick="jugar()">Jugar</button>
+            <button onclick="dormir()">Dormir</button>
+            <button onclick="vacunar()">Vacunar</button>
+            <button onclick="bañar()">Bañar</button>
+            <button onclick="retar()">Retar</button>
+            <button onclick="acariciar()">Acariciar</button>
+        </section>
+
+    </main>
+    
+    <footer></footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Películas</h1>
+    </header>
+
+    <main>
+        <section id="elecciones">
+            <input type="text" id="edades" placeholder="Edad">
+            <select name="opciones" id="generos">
+                <option selected="selected">Géneros</option>
+                <option value="1">Comedia</option>
+                <option value="2">Crimen</option>
+                <option value="3">Drama</option>
+                <option value="4">Musical</option>
+            </select>
+            <button onclick="pelicula()">Elegir</button>
+            <h2>Recomendacion</h2>
+            <h2 id="resultado"></h2>
+        </section>
+            
+            
+    </main>
+
+    <footer>
+        <p>Realizado por Yago Vila Rama 2º de Desenvolvemento Web cliente</p>
+    </footer>
+</body>
+</html>

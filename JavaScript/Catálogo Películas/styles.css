@@ -1,0 +1,105 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo general del cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  /* Estilo del área principal */
+  main {
+    flex-grow: 1;
+    width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo de los elementos de entrada */
+  input[type="text"],
+  select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+ 
+  
+ #elecciones{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+ }
+
+ #elecciones input, #elecciones select, #elecciones button{
+  width: 60%;
+ }
+
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* Estilo de los encabezados secundarios */
+  h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    
+  }
+
+  #resultado{
+    background-color: gray;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }

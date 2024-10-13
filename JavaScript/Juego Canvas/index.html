@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <script src="Pelota.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    *::after, *::before, *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        background-color: #313030;
+        background-image: url(fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #centro{
+        width: 500px;
+        height: 500px;
+        outline: 3px solid goldenrod;
+        border-radius: 10px;
+        background-color: aliceblue;
+        display: grid;
+        place-content: center;
+        background-image: url(fondoInterior.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #cabecera{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span{
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        font-style: italic;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: gold;
+    }
+
+</style>
+<body>
+    <section id="cabecera">
+        <img src="astronaut.png" alt="" width="100" height="100">
+        <span>Astronaut II</span>
+    </section>
+    
+    <div id="centro">
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    
+    <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        
+        let pelota = new Pelota(ctx, 25, "blue", 200, 0);
+        let barra = new Barra(ctx, 100, 15);
+        let imagenBarra = new Image();
+        let imagenPelota = new Image();
+        imagenPelota.onload = function () {
+            pelota.imagen = imagenPelota;
+        };
+        imagenBarra.onload = function () {
+            barra.imagen = imagenBarra;
+            iniciar();
+        };
+        imagenBarra.src = 'barra.png';
+        imagenPelota.src = 'asteroide.png';
+        function iniciar(){
+            pelota.draw();
+            barra.dibujarBarra(200, 450, 100, 10, 20);
+            pelota.mover(barra);     
+            requestAnimationFrame(iniciar)
+            
+        }
+        
+
+        function desplazarBarra(event) {
+            if(event.key === "ArrowRight"){
+                barra.moverBarra("Derecha");
+            }else if(event.key === "ArrowLeft"){
+                barra.moverBarra("Izquierda");
+            }else if(event.key === "p" || event.key === "P"){
+                alert("PAUSA");
+            }
+
+        }
+
+        window.addEventListener('keydown', desplazarBarra);
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo"></h1>
+    </header>
+    <main>
+        <h1 id="res"></h1>
+        <div>
+            <input type="text" id="entrada" placeholder="Palabra o letra">
+            <button onclick="comprobar()" id="boton">Comprobar</button>
+            <h2 style="text-align: center;">Intentos: <span id="intentos"></span></h2>
+        </div>
+    </main>
+    
+    
+    
+    <script>
+        let palabra = [];
+        let asteriscos = [];
+        let intentos = 6;
+        const escribir = string => document.getElementById("res").textContent = string.join("");
+        const random = array => Math.floor(Math.random()*((array.length) - (array.length - array.length)) + (array.length - array.length));
+        const intentosAUX = x => document.getElementById("intentos").textContent = x;
+        function comprobar(){
+            let aciertos = 0;
+            let palabraCom = document.getElementById("entrada").value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            let palabraCom2 = document.getElementById("entrada");
+            if(palabraCom.length > 1){
+                if(palabra.join("") == palabraCom){
+                    asteriscos = [...palabra];
+                    aciertos = palabra.length;
+                }
+                if(aciertos != 0){
+                    escribir(asteriscos);
+                }else{
+                    intentos--;
+                }
+                palabraCom2.value = "";
+            }else if(palabraCom.length == 1){
+                for(let i = 0; i < palabra.length; i++){
+                    if(palabra[i] == palabraCom){
+                        asteriscos[i] = palabra[i];
+                        aciertos++;
+                    }
+                }
+                if(aciertos != 0){
+                    escribir(asteriscos);
+
+                }else{
+                    intentos--;
+                }
+                palabraCom2.value =  "";
+            }else{
+                intentos--;
+            }
+            fails(aciertos);
+        }
+
+        function fails(x){
+            let boton = document.getElementById("boton");
+            if(intentos == 0){
+                escribir(['Y', 'O', 'U', ' ', 'L', 'O', 'S', 'E']);
+                boton.disabled = true;
+            }
+
+            if(x == palabra.length){
+                escribir(['Y', 'O', 'U', ' ', 'W', 'I', 'N']);
+                boton.disabled = true;
+            }
+            intentosAUX(intentos);
+            dibujo();
+        }
+
+        
+
+        (()=>{
+            let stock = ["Javascript", "Java", "PHP", "MySql", "Python"];
+            palabra = stock[random(stock)].toLocaleLowerCase().split("");
+            for(let i = 0; i < palabra.length; i++){
+                asteriscos.push("*");
+            }
+            escribir(asteriscos);
+            intentosAUX(intentos);
+        })();
+
+        function dibujo (){
+            if(intentos == 6){
+                document.getElementById("titulo").innerText ="";
+            }else if(intentos == 5){
+                document.getElementById("titulo").innerText ="O";
+            }else if(intentos == 4){
+                document.getElementById("titulo").innerText ="O\n|";
+            }else if(intentos == 3){
+                document.getElementById("titulo").innerText ="O\n/|";
+            }else if(intentos == 2){
+                document.getElementById("titulo").innerText ="O\n/|\\";
+            }else if(intentos == 1){
+                document.getElementById("titulo").innerText ="O\n/|\\\n/";
+            }else if(intentos == 0){
+                document.getElementById("titulo").innerText ="O\n/|\\\n/\\";
+            }
+        }
+    </script>
+</body>
+</html>

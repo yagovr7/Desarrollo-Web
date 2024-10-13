@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta atrás</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cuenta atrás</h1>
+    </header>
+    <main>
+        <section id="contador">
+            <div id="dias">0</div>
+            <div id="horas">0</div>
+            <div id="minutos">0</div>
+            <div id="segundos">0</div>
+        </section>
+    </main>
+    <footer>
+        <form action="">
+            <label for="fecha">Fecha</label>
+            <input type="datetime-local" name="fecha" id="fecha" required>
+            <input type="button" onclick="principal()" value="Iniciar">
+            <input type="button" onclick="detenerTemporizador()" value="Pausar">
+        </form>
+    </footer>
+</body>
+</html>
