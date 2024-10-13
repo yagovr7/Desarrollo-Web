@@ -1,0 +1,18 @@
+CREATE DEFINER=`root`@`localhost` FUNCTION `mesCastellano`(mI INT) RETURNS varchar(20) CHARSET utf8mb4
+    DETERMINISTIC
+begin
+CASE mI
+		WHEN 1 THEN RETURN 'Enero';
+		WHEN 2 THEN RETURN 'Febrero';
+		WHEN 3 THEN RETURN 'Marzo';
+		WHEN 4 THEN RETURN 'Abril';
+		WHEN 5 THEN RETURN 'Mayo';
+		WHEN 6 THEN RETURN 'Junio';
+		WHEN 7 THEN RETURN 'Julio';
+		WHEN 8 THEN RETURN 'Agosto';
+		WHEN 9 THEN RETURN 'Septiembre';
+		WHEN 10 THEN RETURN 'Octubre';
+		WHEN 11 THEN RETURN 'Noviembre';
+		WHEN 12 THEN RETURN 'Diciembre';
+ END CASE;
+END

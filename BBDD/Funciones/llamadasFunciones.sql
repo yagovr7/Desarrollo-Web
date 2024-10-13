@@ -1,0 +1,10 @@
+select siDivisible(49,2);
+select notasPrimaria(-6.6, 'Laura') as notasPrimaria;
+select bucleLOOP() as suma;
+select bucleREPEAT() as suma;
+select bucleWHILE() as suma;
+call operacionesAritmeticasBIS(0, 0);
+select primeros20Impares() as R;
+select diaCastellano(dayname(now())) as dia;
+select mesCastellano(month(now())) as mes;
+select fechaLarga(now()) as fechaLarga;

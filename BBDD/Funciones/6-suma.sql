@@ -1,0 +1,5 @@
+CREATE DEFINER=`root`@`localhost` FUNCTION `suma`(N1 NUMERIC(5,2), N2 NUMERIC(5,2)) RETURNS decimal(6,2)
+BEGIN
+
+RETURN n1 +n2;
+END

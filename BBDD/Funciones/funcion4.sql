@@ -1,0 +1,17 @@
+USE KADOO;
+
+DROP FUNCTION IF EXISTS FUNCION4;
+
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `FUNCION4`(P_TIPO CHAR(1)) RETURNS varchar(25) CHARSET latin1
+BEGIN
+    DECLARE V_TIPO_DIRECTOR VARCHAR(25);
+    IF P_TIPO = 'P' THEN
+        SET V_TIPO_DIRECTOR = 'Director en propiedad';
+    ELSE
+        SET V_TIPO_DIRECTOR = 'Director en funciones';
+    END IF;
+    RETURN V_TIPO_DIRECTOR;
+        
+END
